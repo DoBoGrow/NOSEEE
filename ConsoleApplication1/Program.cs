@@ -8,9 +8,7 @@ namespace Library
 {
     class Library
     {
-        public String Name { get; set; }
-        public String Address { get; set; }
-        public int Open { get; set; }
+
 
         public Library()
         {
