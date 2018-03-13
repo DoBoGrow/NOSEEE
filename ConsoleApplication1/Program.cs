@@ -9,6 +9,7 @@ namespace Library
     class Library
     {
 
+
         public Library()
         {
             this.Name = "";
@@ -32,6 +33,13 @@ namespace Library
             Console.WriteLine("Address: { this.Address }");
             Console.WriteLine("Open: { this.Open }");
         }
+
+        static void Main(string[] args)
+        {
+            Library q = new Library();
+            q.Input();
+            q.Print();
+            Console.ReadKey();
         }
     }
 }
