@@ -4,12 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace Library
 {
-    class Program
+    class Library
     {
-        static void Main(string[] args)
+
+        public Library()
         {
+            this.Name = "";
+            this.Address = "";
+            this.Open = 0;
+        }
+
+        public void Input()
+        {
+            Console.Write("Input name of library: ");
+            this.Name = Console.ReadLine();
+            Console.Write("Input address of library: ");
+            this.Address = Console.ReadLine();
+            Console.Write("Input open of library: ");
+            this.Open = (int)Convert.ToDouble(Console.ReadLine());
+        }
+
+        public void Print()
+        {
+            Console.WriteLine("Name: { this.Name }");
+            Console.WriteLine("Address: { this.Address }");
+            Console.WriteLine("Open: { this.Open }");
+        }
         }
     }
 }
